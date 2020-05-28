@@ -1,0 +1,10 @@
+frase = 'Curso em Vídeo Python'
+print('Curso' in frase)
+print(frase.find('Vídeo'))
+print(frase.find('vídeo'))
+print('CURSO' in frase)
+print(frase.lower())
+print(frase.lower().find('curso'))
+dividido = frase.split()
+print(dividido[0])
+print(dividido[2][3])
