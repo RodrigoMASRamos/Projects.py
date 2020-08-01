@@ -3,9 +3,8 @@
 d = input('Digite a distância da viagem em Km. Após isso, lhe informarei o preço da passagem: ').strip()
 d = float(d)
 if d > 200:
-    Sbase = 200 * 0.50
-    Sadit = (d - 200) * 0.45
-    Stotal = Sadit + Sbase
+    Sbase = 200 * 0.45
+    Stotal = Sbase
     print(f'O preço total (incluindo o adicional) necessário a ser pago é de R${Stotal:.2f}')
 else:
     Sbase = d * 0.50
