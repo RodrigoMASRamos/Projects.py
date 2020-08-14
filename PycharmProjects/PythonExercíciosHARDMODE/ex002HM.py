@@ -1,5 +1,5 @@
 # ex002: Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas vindas
-import pygame
+from pygame import mixer
 
 nome = input('Olá! Qual é o seu nome? ').strip()
 print(f'Olá, {nome}! Seja muito bem vindo(a)!')
@@ -73,10 +73,10 @@ if nome == 'KINDRED':
 
 if nome == 'LILI' or nome == 'QUEEN':
     print('Waifu a vista! Me tragam uma pokebola!')
-    pygame.init()
-    pygame.mixer.music.load("ex002HM-1.mp3")
-    pygame.mixer.music.play()
-    pygame.event.wait()
+    mixer.init()
+    mixer.music.load('ex002HM-1.mp3')
+    mixer.music.play()
+    input(' ')
 
 if nome == 'L' or nome == 'LIGHT YAGAMI' or nome == 'LIGHT' or nome == 'YAGAMI' or nome == 'KIRA':
     print('Não pode ser... Você é a JUSTIÇA!?')
@@ -98,6 +98,7 @@ if nome == 'MINATO' or nome == 'MINATO NAMIKASE' or nome == 'NAMIKASE MINATO':
 
 if nome == 'NEAR' or nome == 'MELLO':
     print('A missão foi completada, com Mello e Near!')
+
 # O
 
 if nome == 'OKABE RINTAROU' or nome == 'OKABE RINTARO' or nome == 'RINTARO' or nome == 'OKABE' or nome == 'RINTARO ' \
