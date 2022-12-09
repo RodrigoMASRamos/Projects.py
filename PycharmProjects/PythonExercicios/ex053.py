@@ -22,12 +22,16 @@ palavras = frase.split()
 junto = ''.join(palavras) # É UM METODO. Entre as aspas, está especificado O QUE juntará as listas e, entre (),
 # qual lista será alvo do método
 inverso = '' # Note que o espaço está vazio. Isso ocorre porque o laço formará a frase ao contrário
+                    # Inicio      # FIM   # Ao contrário
 for letra in range(len(junto) - 1, -1, -1):
     inverso = inverso + junto[letra] # Letra é a variavel do for. Os numeros correspondentes vão selecionar letras.
 if inverso == junto:
     print('Temos um palíndromo!')
 else:
     print('A frase digitada não é um palíndromo!')
+
+# sabe-se que, em Python, o tratamento de string EXCLUI O ULTIMO TERMO e ADICIONA "1" na ordem (caractere "0" é o 1°
+# caractere)
 
 '''
 Abaixo segue o MACETE DE FATIAMENTO EM PYTHON do professor Gustavo Guanabara:
